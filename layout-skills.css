@@ -1,23 +1,21 @@
 /*style CSS*/
 body{
   font-size:20px;
-  height:500px;
-  margin:0;
 }
 /*.content is box main, definition and design in css*/
 .content{
   border-radius:20px;
   font-size:50%;
-  min-width:350px;
-  min-height:450px;
   text-align:center;
   color:white;
   position:relative;
   background:skyblue;
-  width:80%;
-  height:100%;
-  margin:auto;
-  top: 20%;
+  width:100%;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  height:100vh;
 } 
 /*.head is sitting at the up of the box main(.content))*/
 .head{
@@ -97,4 +95,22 @@ body{
   color:red;
   border:3px solid lightgreen;
   box-shadow:15px 15px 100px skyblue;
+}
+/*@media*/
+@media (max-width:500px){
+  .section{
+    position:absolute;
+    width:99%;
+    left:0;
+    right:0;
+    height:65%;
+    }
+  .aside{
+    position:absolute;
+    width:99%;
+    left:0;
+    right:0;
+    display:none;
+  }
+
 }
